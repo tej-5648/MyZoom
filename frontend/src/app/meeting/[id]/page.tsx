@@ -496,8 +496,8 @@ export default function MeetingRoom({ params }: { params: Promise<{ id: string }
                   <p className="flex"><span className="text-gray-500 w-24 font-medium shrink-0">Passcode:</span> <span className="font-mono bg-gray-100 px-1 rounded">123456</span></p>
                   <p className="flex">
                     <span className="text-gray-500 w-24 font-medium shrink-0">Invite Link:</span> 
-                    <a href={`http://localhost:3000/meeting/${id}`} className="text-zoom-blue hover:underline truncate">
-                      http://localhost:3000/meeting/{id}
+                    <a href={typeof window !== 'undefined' ? `${window.location.origin}/meeting/${id}` : `http://localhost:3000/meeting/${id}`} className="text-zoom-blue hover:underline truncate">
+                      {typeof window !== 'undefined' ? `${window.location.origin}/meeting/${id}` : `http://localhost:3000/meeting/${id}`}
                     </a>
                   </p>
                 </div>
