@@ -16,6 +16,10 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Zoom Clone API")
 
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the Zoom Clone API! The server is running successfully."}
+
 # Configure CORS for Next.js frontend
 app.add_middleware(
     CORSMiddleware,
