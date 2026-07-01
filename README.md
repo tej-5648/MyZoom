@@ -2,6 +2,7 @@
 
 A functional, modern video conferencing web application designed as a clone of the Zoom web app. Built to replicate Zoom's design, user experience, and core meeting workflows, allowing users to easily create, schedule, join, and manage meetings.
 
+Live Website: https://my-zoom-gamma.vercel.app/login
 ## 🚀 Features
 
 ### Core Functionality (Must Haves)
